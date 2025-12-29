@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Calendar icon centered in safe zone (24dp inset = 72dp visible) -->
+    <group
+        android:translateX="30"
+        android:translateY="30">
+        
+        <!-- Calendar body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M43,12H41V10C41,9.45 40.55,9 40,9C39.45,9 39,9.45 39,10V12H9V10C9,9.45 8.55,9 8,9C7.45,9 7,9.45 7,10V12H5C2.79,12 1,13.79 1,16V42C1,44.21 2.79,46 5,46H43C45.21,46 47,44.21 47,42V16C47,13.79 45.21,12 43,12ZM45,42C45,43.1 44.1,44 43,44H5C3.9,44 3,43.1 3,42V22H45V42ZM45,20H3V16C3,14.9 3.9,14 5,14H7V16C7,16.55 7.45,17 8,17C8.55,17 9,16.55 9,16V14H39V16C39,16.55 39.45,17 40,17C40.55,17 41,16.55 41,16V14H43C44.1,14 45,14.9 45,16V20Z" />
+        
+        <!-- Calendar dots/events -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M12,28H18V34H12V28ZM21,28H27V34H21V28ZM30,28H36V34H30V28ZM12,37H18V43H12V37ZM21,37H27V43H21V37Z" />
+    </group>
+</vector>
