@@ -336,7 +336,7 @@ private fun StatusUpdateWidget(
             OutlinedTextField(
                 value = location,
                 onValueChange = onLocationChange,
-                label = { Text("Where are you?") },
+                label = { Text("Location (optional)") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 enabled = !isUpdating
@@ -347,7 +347,7 @@ private fun StatusUpdateWidget(
             OutlinedTextField(
                 value = note,
                 onValueChange = onNoteChange,
-                label = { Text("Note (optional)") },
+                label = { Text("Status (optional)") },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 enabled = !isUpdating
@@ -366,7 +366,7 @@ private fun StatusUpdateWidget(
 
             Button(
                 onClick = onSubmit,
-                enabled = location.isNotBlank() && !isUpdating,
+                enabled = (location.isNotBlank() || note.isNotBlank()) && !isUpdating,
                 modifier = Modifier.align(Alignment.End)
             ) {
                 if (isUpdating) {
